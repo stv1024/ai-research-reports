@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>情绪产品与游戏赛道用户画像深度报告</title>
+  <style>
+    :root{--bg:#f7f8fb;--paper:#fff;--ink:#162033;--muted:#647087;--line:#dfe5ef;--green:#2f8f5b;--blue:#2d63a5;--purple:#7551a8;--orange:#df6a2e;--red:#d14a3a;--soft:#f1f5f9;--shadow:0 18px 42px rgba(28,41,61,.08);--radius:22px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fbfcff,#f4f6fb);font-family:var(--sans);color:var(--ink);line-height:1.72}.page{max-width:1180px;margin:0 auto;padding:28px 22px 72px}.hero,.card{background:var(--paper);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}.hero{padding:42px}.eyebrow{color:var(--orange);font-weight:850;letter-spacing:.14em;text-transform:uppercase;font-size:13px}h1{font-size:clamp(34px,5.5vw,62px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.04em}h2{font-size:30px;line-height:1.25;margin:0 0 14px}h3{font-size:19px;line-height:1.35;margin:0 0 8px}.lead{font-size:19px;color:var(--muted);max-width:860px}.nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.nav a,.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;text-decoration:none;color:#334155;font-size:14px}.card{padding:28px;margin-top:24px}.quote{border-left:5px solid var(--orange);background:#fff4ed;border-radius:18px;padding:18px 22px;font-size:20px;font-weight:850}.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.mini{border:1px solid var(--line);border-radius:20px;padding:18px;background:#fff}.muted{color:var(--muted)}table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}th{background:#f8fafc;color:#334155;font-size:13px}tr:last-child td{border-bottom:0}.tag{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:800}.green{color:var(--green);background:#eaf6ef}.blue{color:var(--blue);background:#e9f1fb}.purple{color:var(--purple);background:#f1ecfa}.orange{color:var(--orange);background:#fff0e8}.red{color:var(--red);background:#fff0ef}.matrix{display:grid;grid-template-columns:1fr 1fr;gap:16px}.axis{height:360px;position:relative;border:1px solid var(--line);border-radius:22px;background:linear-gradient(90deg,transparent calc(50% - .5px),#cdd6e3 calc(50% - .5px),#cdd6e3 calc(50% + .5px),transparent calc(50% + .5px)),linear-gradient(0deg,transparent calc(50% - .5px),#cdd6e3 calc(50% - .5px),#cdd6e3 calc(50% + .5px),transparent calc(50% + .5px)),#fff}.lab{position:absolute;font-size:12px;color:#647087;font-weight:850;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 8px}.top{top:8px;left:50%;transform:translateX(-50%)}.bottom{bottom:8px;left:50%;transform:translateX(-50%)}.left{left:8px;top:50%;transform:translateY(-50%)}.right{right:8px;top:50%;transform:translateY(-50%)}.pt{position:absolute;transform:translate(-50%,-50%);font-size:12px;font-weight:850;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 7px;white-space:nowrap;box-shadow:0 6px 12px rgba(20,32,50,.06)}.scale{position:relative;height:96px;border-top:2px solid #9aa8ba;margin:30px 8px 4px}.scale .end{position:absolute;top:-31px;color:#647087;font-size:12px;font-weight:850}.scale .l{left:0}.scale .r{right:0}.scale .pill{position:absolute;transform:translateX(-50%);font-size:11px;padding:3px 7px}.persona{min-height:200px}.persona b{display:inline-flex;width:30px;height:30px;border-radius:50%;align-items:center;justify-content:center;color:#fff;margin-bottom:8px}.persona:nth-child(1)b{background:var(--green)}.persona:nth-child(2)b{background:var(--blue)}.persona:nth-child(3)b{background:var(--purple)}.persona:nth-child(4)b{background:var(--orange)}.persona:nth-child(5)b{background:var(--red)}.footer{color:var(--muted);font-size:13px;margin-top:26px}@media(max-width:860px){.g2,.g3,.g4,.matrix{grid-template-columns:1fr}.hero{padding:28px}.card{padding:22px}.axis{height:320px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Strategy Report · 2026-05-06</div>
+      <h1>情绪产品与游戏赛道用户画像深度报告</h1>
+      <p class="lead">围绕星露谷、牧场物语、波西亚/沙石镇、心动小镇、恋与深空、AI 陪伴、Gacha、桌面挂机、潜水员戴夫、女性向短剧、脱口秀、追星与超自然行动组，分析用户画像、底层需求、心理动机、用户重合原因与产品机会。</p>
+      <div class="nav"><a href="/">← 报告首页</a><a href="#model">抽象模型</a><a href="#table">产品画像</a><a href="#axis">定位坐标</a><a href="#spectrum">光谱</a><a href="#personas">用户原型</a><a href="#why">Why</a><a href="#opportunity">机会</a></div>
+    </section>
+
+    <section class="card" id="model">
+      <h2>一、总判断：这些产品共享的不是品类，而是情绪任务</h2>
+      <div class="quote">用户不是忠于“种田、乙女、短剧、追星或微恐”，而是忠于能稳定提供情绪价值的系统。</div>
+      <div class="grid g4">
+        <div class="mini"><h3>可控情绪</h3><p class="muted">现实情绪拥挤时，产品提供安抚、爽感、尖叫、笑、哭、排毒。</p></div>
+        <div class="mini"><h3>可控关系</h3><p class="muted">NPC、AI、恋人、偶像、队友和同担，提供低风险连接。</p></div>
+        <div class="mini"><h3>可控身份</h3><p class="muted">房间、OC、卡面、周边、评论立场和截图，成为自我叙事。</p></div>
+        <div class="mini"><h3>低风险逃离</h3><p class="muted">进入第二现实，但随时可以退出，不必承担现实后果。</p></div>
+      </div>
+      <p><strong>抽象公式：</strong>情绪入口 + 可控关系 + 身份表达 + 低风险反馈 + 可分享内容。</p>
+    </section>
+
+    <section class="card" id="table">
+      <h2>二、产品画像与底层需求</h2>
+      <table>
+        <thead><tr><th>产品/赛道</th><th>表层形态</th><th>用户真正需要</th><th>关键风险</th></tr></thead>
+        <tbody>
+          <tr><td><strong>星露谷 / 牧场物语</strong></td><td>田园经营、生活模拟</td><td>修复秩序，获得稳定回报；努力会被世界承认。</td><td>过肝、过强 FOMO 会破坏疗愈感。</td></tr>
+          <tr><td><strong>波西亚 / 沙石镇</strong></td><td>工坊建造、任务、采集生产</td><td>被社区需要；把劳动变成可见建设。</td><td>制造链过重会劝退轻度用户。</td></tr>
+          <tr><td><strong>心动小镇</strong></td><td>慢社交、装修、生活方式</td><td>低压存在、审美表达、朋友路过式陪伴。</td><td>攀比和社交绑架会破坏松弛感。</td></tr>
+          <tr><td><strong>恋与深空</strong></td><td>女性向 3D 恋爱陪伴</td><td>被偏爱、被选择、被长期记住。</td><td>角色崩坏、剧情敷衍、逼氪会伤害信任。</td></tr>
+          <tr><td><strong>星野 / 猫箱 / 造梦次元</strong></td><td>AI 角色陪伴与剧情共创</td><td>即时回应、私密幻想、人设可塑、关系连续。</td><td>失忆、人机感、内容合规和模型成本。</td></tr>
+          <tr><td><strong>Tomodachi Life</strong></td><td>观察式社交模拟</td><td>把熟人或 OC 放进系统，看荒诞关系自己发酵。</td><td>若随机事件浅，会变成一次性笑料。</td></tr>
+          <tr><td><strong>Gacha 系列</strong></td><td>捏人、OC、短剧创作</td><td>把脑内角色、人设、CP 和小剧场可视化。</td><td>青少年社区安全与内容边界。</td></tr>
+          <tr><td><strong>Cozy 桌面挂机</strong></td><td>桌宠、挂机、轻生产力</td><td>工作学习旁边有低侵入陪伴。</td><td>太浅留不住，任务化太重会有压力。</td></tr>
+          <tr><td><strong>潜水员戴夫</strong></td><td>探索采集 + 餐厅经营</td><td>把未知冒险变成稳定生意；风险可控但不无聊。</td><td>双循环失衡或后期刷材料疲劳。</td></tr>
+          <tr><td><strong>脱口秀</strong></td><td>喜剧、现场、切片传播</td><td>我的委屈终于被说出来；一起笑完成排毒。</td><td>冒犯边界、内容安全、持续创作压力。</td></tr>
+          <tr><td><strong>女性向短剧</strong></td><td>甜宠、复仇、打脸、逆袭</td><td>命运补偿、被偏爱、委屈被清算。</td><td>审美疲劳、价值观风险、投流依赖。</td></tr>
+          <tr><td><strong>追星</strong></td><td>偶像、演唱会、应援</td><td>参与理想对象的成长和荣光，获得同担归属。</td><td>粉圈对立、非理性消费、塌房风险。</td></tr>
+          <tr><td><strong>超自然行动组</strong></td><td>微恐组队、搜打撤、Party Game</td><td>一起害怕、一起尖叫、一起犯蠢、一起活下来。</td><td>匹配环境、社交治理、内容新鲜度。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="axis">
+      <h2>三、定位坐标系</h2>
+      <div class="matrix">
+        <div class="mini"><h3>坐标 A：安抚 vs 刺激；独处 vs 群体</h3><div class="axis"><span class="lab top">情绪刺激</span><span class="lab bottom">安抚疗愈</span><span class="lab left">独处体验</span><span class="lab right">群体共鸣</span><span class="pt green" style="left:22%;top:78%">星露谷/牧场</span><span class="pt green" style="left:31%;top:56%">波西亚/沙石镇</span><span class="pt green" style="left:36%;top:70%">心动</span><span class="pt blue" style="left:32%;top:55%">深空/AI</span><span class="pt purple" style="left:48%;top:48%">Gacha/Tomodachi</span><span class="pt green" style="left:52%;top:33%">戴夫</span><span class="pt orange" style="left:40%;top:22%">女性短剧</span><span class="pt orange" style="left:63%;top:22%">脱口秀</span><span class="pt orange" style="left:76%;top:25%">追星</span><span class="pt orange" style="left:84%;top:16%">超自然</span><span class="pt blue" style="left:18%;top:90%">桌面</span></div></div>
+        <div class="mini"><h3>坐标 B：主动 vs 被动；表达 vs 关系</h3><div class="axis"><span class="lab top">关系投射</span><span class="lab bottom">自我表达</span><span class="lab left">主动操作</span><span class="lab right">被动消费</span><span class="pt purple" style="left:18%;top:83%">Gacha</span><span class="pt green" style="left:28%;top:67%">心动</span><span class="pt green" style="left:30%;top:58%">经营类</span><span class="pt green" style="left:36%;top:54%">戴夫</span><span class="pt orange" style="left:37%;top:27%">超自然</span><span class="pt blue" style="left:58%;top:24%">深空/AI</span><span class="pt blue" style="left:52%;top:52%">桌面</span><span class="pt orange" style="left:82%;top:24%">女性短剧/追星</span><span class="pt orange" style="left:82%;top:48%">脱口秀</span></div></div>
+      </div>
+    </section>
+
+    <section class="card" id="spectrum">
+      <h2>四、六条用户重合光谱</h2>
+      <div class="grid g2">
+        <div class="mini"><h3>掌控秩序 ↔ 命运补偿</h3><div class="scale"><span class="end l">掌控秩序</span><span class="end r">命运补偿</span><span class="pill green" style="left:14%;top:18px">星露谷/牧场</span><span class="pill green" style="left:24%;top:44px">波西亚/沙石镇</span><span class="pill purple" style="left:47%;top:18px">Gacha/Tomodachi</span><span class="pill orange" style="left:58%;top:44px">脱口秀/超自然</span><span class="pill blue" style="left:78%;top:18px">深空/AI</span><span class="pill orange" style="left:88%;top:44px">女性短剧/追星</span></div></div>
+        <div class="mini"><h3>独处恢复 ↔ 一起共鸣</h3><div class="scale"><span class="end l">独处恢复</span><span class="end r">一起共鸣</span><span class="pill blue" style="left:15%;top:18px">桌面</span><span class="pill green" style="left:23%;top:44px">星露谷/牧场</span><span class="pill blue" style="left:36%;top:18px">深空/AI</span><span class="pill green" style="left:55%;top:44px">心动/戴夫</span><span class="pill orange" style="left:80%;top:18px">脱口秀/追星</span><span class="pill orange" style="left:91%;top:44px">超自然</span></div></div>
+        <div class="mini"><h3>低刺激安抚 ↔ 高刺激宣泄</h3><div class="scale"><span class="end l">低刺激安抚</span><span class="end r">高刺激宣泄</span><span class="pill green" style="left:16%;top:18px">星露谷/牧场/心动</span><span class="pill blue" style="left:32%;top:44px">桌面</span><span class="pill blue" style="left:52%;top:18px">深空/AI/Gacha</span><span class="pill green" style="left:57%;top:44px">戴夫</span><span class="pill orange" style="left:83%;top:18px">短剧/脱口秀</span><span class="pill orange" style="left:91%;top:44px">追星/超自然</span></div></div>
+        <div class="mini"><h3>主动建造 ↔ 被动消费</h3><div class="scale"><span class="end l">主动建造</span><span class="end r">被动消费</span><span class="pill green" style="left:18%;top:18px">经营/心动/戴夫</span><span class="pill purple" style="left:28%;top:44px">Gacha</span><span class="pill orange" style="left:36%;top:70px">超自然</span><span class="pill blue" style="left:57%;top:18px">深空/AI/桌面</span><span class="pill orange" style="left:85%;top:44px">短剧/脱口秀/追星</span></div></div>
+        <div class="mini"><h3>自我表达 ↔ 被偏爱/关系满足</h3><div class="scale"><span class="end l">自我表达</span><span class="end r">关系满足</span><span class="pill purple" style="left:18%;top:18px">Gacha/Tomodachi</span><span class="pill green" style="left:28%;top:44px">心动</span><span class="pill green" style="left:50%;top:18px">经营/戴夫</span><span class="pill blue" style="left:74%;top:44px">深空/AI</span><span class="pill orange" style="left:88%;top:18px">短剧/追星</span></div></div>
+        <div class="mini"><h3>长线沉浸 ↔ 碎片快感</h3><div class="scale"><span class="end l">长线沉浸</span><span class="end r">碎片快感</span><span class="pill green" style="left:18%;top:18px">星露谷/牧场/沙石镇</span><span class="pill blue" style="left:34%;top:44px">深空/桌面</span><span class="pill purple" style="left:56%;top:18px">AI/Gacha/Tomodachi</span><span class="pill orange" style="left:72%;top:44px">追星</span><span class="pill orange" style="left:88%;top:18px">短剧/脱口秀/超自然</span></div></div>
+      </div>
+    </section>
+
+    <section class="card" id="personas">
+      <h2>五、五类高重合用户原型</h2>
+      <div class="grid g3">
+        <div class="mini persona"><b>1</b><h3>秩序修复型</h3><p class="muted">靠稳定循环找回掌控感。</p><p>星露谷、牧场、波西亚、沙石镇、戴夫、桌面挂机。</p></div>
+        <div class="mini persona"><b>2</b><h3>关系投射型</h3><p class="muted">想被看见、被偏爱、被回应。</p><p>深空、星野、猫箱、造梦、女性短剧、追星。</p></div>
+        <div class="mini persona"><b>3</b><h3>表达创作型</h3><p class="muted">把脑内世界做出来。</p><p>Gacha、Tomodachi、心动、AI 创作。</p></div>
+        <div class="mini persona"><b>4</b><h3>情绪宣泄型</h3><p class="muted">想笑、想骂、想一起尖叫。</p><p>女性短剧、脱口秀、超自然行动组。</p></div>
+        <div class="mini persona"><b>5</b><h3>低压社交型</h3><p class="muted">想连接别人，但不想太累。</p><p>心动、超自然、追星、线下演出。</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="why">
+      <h2>六、为什么这些产品用户会重合？</h2>
+      <div class="grid g2">
+        <div class="mini"><h3>1. 用户按状态切换产品</h3><p>累了需要 Cozy；孤独时要 AI/乙女；委屈时刷短剧；无聊时玩微恐；想归属时追星或开黑。</p></div>
+        <div class="mini"><h3>2. 关系是最大公约数</h3><p>NPC、AI、虚拟恋人、偶像、同担、队友、评论区，本质都是低风险连接。</p></div>
+        <div class="mini"><h3>3. 弱社交替代强社交</h3><p>用户喜欢有人在，但不喜欢被公会、排行、语音、现实身份和日常任务绑架。</p></div>
+        <div class="mini"><h3>4. 它们都能生成可分享身份</h3><p>房间、卡面、OC、票根、应援、评论立场和开黑名场面，都会成为用户自我叙事。</p></div>
+        <div class="mini"><h3>5. 女性用户不只要甜</h3><p>她们同时需要陪伴、清算、发泄、高光、创作、共同体和安全刺激。</p></div>
+        <div class="mini"><h3>6. 安全刺激是关键增量</h3><p>戴夫和超自然说明，休闲用户能接受刺激，只要后果轻、惩罚低、氛围好。</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="opportunity">
+      <h2>七、产品机会与设计原则</h2>
+      <div class="grid g2">
+        <div class="mini"><h3>Cozy 经营 + 轻刺激 + 低压社交</h3><p>例如小镇生活 + 微恐任务，森林采集 + 夜间咖啡馆，组队探险 + 家园展示。</p></div>
+        <div class="mini"><h3>AI 角色进入生活模拟</h3><p>把 AI 做成小镇 NPC、恋人、宠物、队友，重点是长期记忆、人设稳定和关系事件。</p></div>
+        <div class="mini"><h3>女性向互动短剧 / 互动乙女</h3><p>短剧提供情绪效率，乙女提供关系资产；组合后是高密度剧情 + 长期偏爱。</p></div>
+        <div class="mini"><h3>Gacha / OC + AI 剧场工具</h3><p>帮用户更快生成角色设定、对白、分镜、短视频脚本和关系冲突。</p></div>
+      </div>
+      <table style="margin-top:18px"><thead><tr><th>应该做</th><th>不要做</th></tr></thead><tbody><tr><td>每天有一点变化；关系有记忆；社交低压；表达可分享；刺激低惩罚。</td><td>把 Cozy 做成上班；让 AI/角色失忆；用广告打断亲密关系；制造攀比和社交焦虑。</td></tr></tbody></table>
+    </section>
+
+    <section class="card">
+      <h2>八、最终结论</h2>
+      <div class="quote">这批产品共同指向一个趋势：游戏和内容正在从“挑战系统”转向“情绪栖息地”。</div>
+      <p>最值得关注的组合是：<strong>长期关系 + 高密度情绪 + 可表达身份 + 低压社交 + 低风险逃离现实</strong>。这解释了为什么看似差异巨大的产品，会共享同一批用户。</p>
+      <p class="footer">本页为静态 HTML 报告，可由 Vercel 直接部署。后续新增报告时，只需新增 <code>reports/&lt;slug&gt;/index.html</code> 并更新 <code>reports.json</code>。</p>
+    </section>
+  </main>
+</body>
+</html>
