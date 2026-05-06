@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Research Reports</title>
+  <style>
+    :root{--bg:#f7f8fb;--paper:#fff;--ink:#162033;--muted:#647087;--line:#dfe5ef;--blue:#2d63a5;--green:#2f8f5b;--orange:#df6a2e;--shadow:0 18px 42px rgba(28,41,61,.08);--radius:22px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fbfcff,#f4f6fb);font-family:var(--sans);color:var(--ink);line-height:1.65}.wrap{max-width:1100px;margin:0 auto;padding:56px 22px 80px}.hero{background:var(--paper);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:42px}.eyebrow{display:inline-flex;padding:6px 12px;border-radius:999px;background:#e9f1fb;color:var(--blue);font-weight:700;font-size:13px}h1{font-size:clamp(36px,6vw,72px);line-height:1;margin:18px 0 16px;letter-spacing:-.04em}.lead{font-size:19px;color:var(--muted);max-width:760px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-decoration:none;color:inherit;box-shadow:0 8px 22px rgba(28,41,61,.05);transition:.16s ease}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#b9c7dc}.date{font-size:13px;color:var(--muted);font-weight:700}.card h2{margin:8px 0 8px;font-size:22px;line-height:1.25}.card p{margin:0 0 16px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:12px;border-radius:999px;background:#eef3f9;color:#45546b;padding:4px 9px}.footer{margin-top:28px;color:var(--muted);font-size:14px}.empty{display:none;color:var(--muted);margin-top:22px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Report Archive</span>
+      <h1>AI Research Reports</h1>
+      <p class="lead">一个用于归档 ChatGPT 对话总结与研究报告的静态站点。每篇报告独立存放，并由此首页统一导航。</p>
+    </section>
+    <section id="reports" class="grid" aria-label="Reports"></section>
+    <p id="empty" class="empty">暂无报告。</p>
+    <p class="footer">Structure: <code>/reports/&lt;slug&gt;/index.html</code> · Registry: <code>/reports.json</code></p>
+  </main>
+  <script>
+    async function loadReports(){
+      const grid=document.getElementById('reports');
+      const empty=document.getElementById('empty');
+      try{
+        const res=await fetch('/reports.json',{cache:'no-store'});
+        const reports=await res.json();
+        if(!Array.isArray(reports)||reports.length===0){empty.style.display='block';return;}
+        grid.innerHTML=reports.map(r=>`<a class="card" href="${r.path}"><div class="date">${r.date||''}</div><h2>${r.title}</h2><p>${r.description||''}</p><div class="tags">${(r.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div></a>`).join('');
+      }catch(e){empty.textContent='无法加载 reports.json';empty.style.display='block';}
+    }
+    loadReports();
+  </script>
+</body>
+</html>
